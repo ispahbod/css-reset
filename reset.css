@@ -1,3 +1,4 @@
+/* Reset default styles and set baseline styles for HTML elements */
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -13,6 +14,7 @@ html {
     overflow-x: hidden;
 }
 
+/* Global reset for all elements */
 *,
 *::before,
 *::after {
@@ -24,11 +26,13 @@ html {
     vertical-align: baseline;
 }
 
+/* Image styling */
 img {
     vertical-align: middle;
     object-fit: cover;
 }
 
+/* Anchor styles */
 a {
     color: inherit;
     display: inline;
@@ -37,10 +41,12 @@ a {
     text-decoration: none;
 }
 
+/* List styles */
 ol, ul {
     list-style: none;
 }
 
+/* Blockquote and quote styles */
 blockquote, q {
     quotes: none;
 }
@@ -51,22 +57,26 @@ q:before, q:after {
     content: none;
 }
 
+/* Table styling */
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+/* Horizontal rule styling */
 hr {
     height: 0;
     color: inherit;
     border-top-width: 1px;
 }
 
+/* Common font styling for various elements */
 h1, h2, h3, h4, h5, h6, a, p, span {
     font-size: inherit;
     font-weight: inherit;
 }
 
+/* Form element styling */
 input, textarea {
     outline: none;
     font-size: 0.875rem;
@@ -77,11 +87,13 @@ input, textarea {
     transition-duration: 150ms;
 }
 
+/* Code and preformatted text styling */
 code, kbd, samp, pre {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     font-size: 1em;
 }
 
+/* Button and form element styles */
 button, input, optgroup, select, textarea {
     outline: none;
     font-family: inherit;
@@ -91,24 +103,29 @@ button, input, optgroup, select, textarea {
     color: inherit;
 }
 
+/* Focus styles for Mozilla Firefox */
 :-moz-focusring {
     outline: auto;
 }
 
+/* Remove box-shadow for invalid UI in Mozilla Firefox */
 :-moz-ui-invalid {
     box-shadow: none;
 }
 
+/* Webkit-specific styles for search input */
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
     height: auto;
 }
 
+/* Progress bar styling */
 progress {
     vertical-align: baseline;
     width: 100%;
 }
 
+/* Search input appearance and styling */
 [type='search'] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
@@ -123,21 +140,25 @@ progress {
     font: inherit;
 }
 
+/* Details and summary styles */
 summary {
     display: list-item;
 }
 
+/* Additional styling for specific elements */
 table {
     text-indent: 0;
     border-color: inherit;
     border-collapse: collapse;
 }
 
+/* Button styles */
 button {
     cursor: pointer;
     user-select: none;
 }
 
+/* Label styles */
 label {
     display: inline;
     cursor: pointer;
@@ -145,52 +166,62 @@ label {
     color: inherit;
 }
 
-blockquote,
-dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+/* Margin reset for various block-level elements */
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
     margin: 0;
 }
 
+/* Fieldset styling */
 fieldset {
     margin: 0;
     padding: 0;
 }
 
+/* Legend styling */
 legend {
     padding: 0;
 }
 
+/* List and menu styles */
 ol, ul, menu {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+/* Vertical resizing for textarea */
 textarea {
     resize: vertical;
 }
 
+/* Cursor styles for button elements */
 button, [role="button"] {
     cursor: pointer;
 }
 
+/* Responsive styling for media elements */
 img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
     vertical-align: middle;
     max-width: 100%;
 }
 
+/* SVG fill color adjustment */
 svg {
     fill: currentColor;
 }
 
+/* Default styles for disabled elements */
 :disabled {
     cursor: default;
 }
 
+/* Strong and bold text styling */
 b, strong {
     font-weight: bolder;
 }
 
+/* Hide elements with [hidden] attribute */
 [hidden] {
     display: none !important;
 }
